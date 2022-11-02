@@ -2,6 +2,7 @@ package com.example.listysztosy
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
@@ -9,7 +10,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        v
+        val stos = LinkedList<Int>()
+        val dodaj = findViewById<Button>(R.id.button)
+        val usun = findViewById<Button>(R.id.button2)
     }
 
 }
