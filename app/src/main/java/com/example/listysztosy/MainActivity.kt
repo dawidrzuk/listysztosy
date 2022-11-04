@@ -45,5 +45,16 @@ class MainActivity : AppCompatActivity() {
         pokazostatni.setOnClickListener {
             ostatni.text = stos.last.toString()
         }
+        /* KOLEJKA */
+         val kolejka: Queue<Int> = LinkedList<Int>()
+         val dodajkolejka = findViewById<Button>(R.id.button5)
+        val usunkolejka = findViewById<Button>(R.id.button6)
+        val textkolejka = findViewById<EditText>(R.id.editTextNumber2)
+        val pokaz = findViewById<Button>(R.id.button7)
+
+        dodajkolejka.setOnClickListener {
+            kolejka.add(textkolejka.text.toString().toInt())
+        }
+
     }
 }
