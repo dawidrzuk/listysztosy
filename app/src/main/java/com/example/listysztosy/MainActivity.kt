@@ -22,13 +22,8 @@ class MainActivity : AppCompatActivity() {
         val napis = findViewById<EditText>(R.id.editTextNumber)
         val ostatni = findViewById<TextView>(R.id.textView)
         dodajstos.setOnClickListener {
-            if (stos.isEmpty()) {
-                stos.addFirst(napis.text.toString().toInt())
-                usunstos.isEnabled = true
-            }
-            else {
                 stos.add(napis.text.toString().toInt())
-            }
+                usunstos.isEnabled = true
         }
         usunstos.setOnClickListener {
             stos.removeLast()
